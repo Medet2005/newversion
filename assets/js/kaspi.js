@@ -82,7 +82,7 @@ function closeUdo() {
 }
 
 function switchUdoTab(tab) {
-    document.querySelectorAll('.gos-tab').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.udo-tab').forEach(el => el.classList.remove('active'));
     
     if (tab === 'doc') {
         document.getElementById('tab-doc-btn').classList.add('active');
@@ -91,7 +91,7 @@ function switchUdoTab(tab) {
     } else {
         document.getElementById('tab-rekv-btn').classList.add('active');
         document.getElementById('tab-doc-content').style.display = 'none';
-        document.getElementById('tab-rekv-content').style.display = 'block';
+        document.getElementById('tab-rekv-content').style.display = 'flex';
     }
 }
 
